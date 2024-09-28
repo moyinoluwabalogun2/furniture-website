@@ -1,0 +1,198 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #2c3e50;
+    color: blue;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(195, 192, 192);
+} 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hero .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.hero .overlay h1 {
+    margin: 0;
+    font-size: 1.3em;
+}
+.hero .overlay button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.section h2 {
+    margin-bottom: 20px;
+}
+.section .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section .card {
+    background-color: #34495e;
+    color: white;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.section .card img {
+    width: 100%;
+    height: auto;
+}
+.section .card button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 7px;
+}
+.about {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.about img {
+    width: 100%;
+    height: auto;
+}
+.about .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+}
+.about .content h2 {
+    margin: 0;
+    font-size: 2em;
+}
+.about .content p {
+    margin: 20px 0;
+}
+.about .content button {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .footer-content div {
+    margin: 10px;
+}
+footer .footer-content a {
+    color: white;
+    text-decoration: none;
+}
+footer .footer-content a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+    .section .cards {
+        flex-direction: column;
+    }
+    .section .card {
+        width: 100%;
+    }
+    .hero .overlay h1 {
+        font-size: 1.5em;
+    }
+    .hero .overlay button {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+    .about .content h2 {
+        font-size: 1.5em;
+    }
+    .about .content button {
+        font-size: 0.8em;
+        padding: 8px 16px;
+    }
+}
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    header nav a {
+        margin: 5px 0;
+    }
+    .hero .overlay h1 {
+        font-size: 1.2em;
+    }
+    .hero .overlay button {
+        font-size: 0.7em;
+        padding: 6px 12px;
+    }
+    .section {
+        padding: 20px 10px;
+    }
+    .section .card {
+        padding: 10px;
+    }
+    .about .content {
+        padding: 10px;
+    }
+    .about .content h2 {
+        font-size: 1.2em;
+    }
+    .about .content button {
+        font-size: 0.7em;
+        padding: 6px 12px;
+    }
+}
